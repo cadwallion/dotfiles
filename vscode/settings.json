@@ -1,0 +1,33 @@
+{
+	"vim.insertModeKeyBindings": [
+		{
+			"before": [
+				"j",
+				"j"
+			],
+			"after": [
+				"<esc>"
+			]
+		}
+	],
+	"git.confirmSync": false,
+	"ruby.codeCompletion": "rcodetools",
+	"[ruby]": {
+		"editor.tabSize": 8
+	},
+	"editor.formatOnSave": true,
+	"editor.renderWhitespace": "all",
+	"editor.renderControlCharacters": true,
+	"diffEditor.ignoreTrimWhitespace": false,
+	"workbench.startupEditor": "newUntitledFile",
+	"codespaces.accountProvider": "Microsoft",
+	"rust-analyzer.debug.sourceFileMap": {
+		"/rustc/<id>": "${env:USERPROFILE}/.rustup/toolchains/<toolchain-id>/lib/rustlib/src/rust"
+	},
+	"editor.cursorStyle": "line",
+	"editor.insertSpaces": false,
+	"editor.lineNumbers": "on",
+	"editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+	"editor.wordWrap": "off",
+	"editor.tabSize": 8
+}

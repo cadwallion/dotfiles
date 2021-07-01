@@ -1,0 +1,18 @@
+if [[ -a $HOME/.localrc ]]; then
+  source $HOME/.localrc
+fi
+
+if [ -d "$HOME/.rbenv/bin" ]; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
+fi
+
+if [[ "$(which nodenv)" ]]; then
+  eval "$(nodenv init -)"
+fi
+
+if [ -d "/usr/local/opt/mysql-client/bin" ]; then
+  export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+fi
+
+export PATH="$HOME/.bin:$HOME/go/bin:$HOME/.cargo/bin:$PATH"
